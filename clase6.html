@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 6 - Unidad V: Imágenes</title>
+</head>
+<body bgcolor="#FFF3E0" text="#4E342E" link="#00695C" alink="#D32F2F" vlink="#7B1FA2">
+
+    <h1 align="center">Clase 6</h1>
+
+    <p align="center"><strong>Unidad V - Imágenes</strong></p>
+
+    <hr width="80%" color="#E65100" size="3">
+
+    <p align="center">
+        <a href="index.html">Inicio</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase1.html">Clase 1</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase2.html">Clase 2</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase3.html">Clase 3</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase4.html">Clase 4</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase5.html">Clase 5</a> &nbsp;&nbsp;&nbsp;
+        <a href="programa.html">Programa</a>
+    </p>
+
+    <hr width="80%" color="#E65100" size="3">
+
+    <h2>5.1 Imágenes en la web -- formatos de imágenes</h2>
+
+    <p align="center">
+        <img src="imagenes/html_images.jpg" alt="Formatos de imágenes" width="500" height="200" border="3">
+    </p>
+
+    <p>Poner imágenes en nuestra web produce unos resultados asombrosos de una manera muy fácil, ya que cada imagen colocada en la web incrementará el tamaño (peso) de la página.</p>
+
+    <p>A la hora de insertar imágenes, los formatos de imágenes más comúnmente aceptados son:</p>
+
+    <ul>
+        <li><strong>JPEG</strong>, son imágenes digitales comprimidas con pérdida de información. Pero que nos permiten tener imágenes digitales que ocupen poco espacio.</li>
+        <li><strong>GIF</strong>, es un formato para imágenes de mapas de bits que soportan 8 bits por pixel. El formato GIF soporta imágenes animadas.</li>
+        <li><strong>PNG</strong>, es un formato de imagen en mapa de bits que emplea compresión de datos sin pérdida de información. Es un formato creado para utilizar imágenes en Internet con un tamaño adecuado.</li>
+    </ul>
+
+    <h2>5.2 Insertar una imagen: El comando o etiqueta IMG</h2>
+
+    <p>Para insertar una imagen en HTML tenemos la etiqueta &lt;IMG&gt; que viene de la palabra <em>image</em>. Esta etiqueta es sencilla, con lo cual no necesita de etiqueta de cierre. Se describen los atributos de las imágenes:</p>
+
+    <ul>
+        <li><strong>SRC: Lugar de la imagen</strong>
+            <ul>
+                <li>Este atributo es el que indica dónde se encuentra alojada la imagen que queremos mostrar.</li>
+                <li>Cuando la imagen se encuentra en el mismo directorio que nuestra página HTML, se escribe así:</li>
+                <li>&lt;img src="foto.jpg"&gt; → nombre del archivo</li>
+                <li>En el caso de que la imagen esté en otro directorio, escribiremos lo siguiente:</li>
+                <li>&lt;img src="/multimedia/imagenes/foto.jpg"&gt; → ruta de acceso</li>
+                <li>Y en el caso de que la imagen resida en otro servidor, la URL deberá de indicar el protocolo y el servidor:</li>
+                <li>&lt;img src="http://lineadecodigo.com/imagenes/logo.jpg"&gt; → código URL</li>
+            </ul>
+        </li>
+        <li><strong>ALIGN: Alineación de la imagen</strong>
+            <ul>
+                <li>Sirve para alinear la imagen en la página, y utiliza los siguientes valores:</li>
+                <li>&lt;img src="foto.jpg" align="left" o "right"&gt; → alineación izquierda o derecha</li>
+                <li>&lt;img src="foto.jpg" align="top" o "bottom" o "middle"&gt; → alineación arriba, abajo o medio (centro)</li>
+            </ul>
+        </li>
+        <li><strong>ALT: Texto alternativo de la imagen</strong>
+            <ul>
+                <li>Para que la gente pueda leer la descripción de la imagen al mantener el ratón encima de ella, se utiliza éste atributo:</li>
+                <li>&lt;img src="foto.jpg" alt="paisaje"&gt;</li>
+            </ul>
+        </li>
+        <li><strong>WIDTH y HEIGHT: Dimensiones de la imagen</strong>
+            <ul>
+                <li>Atributos opcionales pero muy recomendables, indican el ancho y altura de la imagen. Se pueden especificar en pixeles o en porcentajes. Si queremos que nuestra imagen se vea en 100x100 pixeles, podemos insertar el siguiente código:</li>
+                <li>&lt;img src="foto.jpg" alt="paisaje" width="100px" height="100px"&gt;</li>
+                <li>O bien &lt;img src="foto.jpg" alt="paisaje" width="100" height="100"&gt;</li>
+                <li>O bien &lt;img src="foto.jpg" alt="paisaje" width="50%" height="50%"&gt;</li>
+            </ul>
+        </li>
+        <li><strong>BORDER: Borde de la imagen</strong>
+            <ul>
+                <li>También se puede adjudicar un borde a la imagen, dependiendo de cómo quieres que sea el grosor del borde, deberás escribir un código así:</li>
+                <li>Por defecto el borde es 0 (cero), <em>sin bordes</em></li>
+                <li>&lt;p&gt;&lt;img src="foto.jpg" alt="paisaje"&gt; Por defecto&lt;/p&gt;</li>
+                <li>Border (Solo sin valor, coloca un borde de 1 pixel)</li>
+                <li>&lt;p&gt;&lt;img src="calvin.gif" border&gt; Coloca un borde de un pixel a la imagen&lt;/p&gt;</li>
+                <li>&lt;p&gt;&lt;img src="foto.jpg" alt="paisaje" border="5"&gt; El borde es de 5px&lt;/p&gt;</li>
+            </ul>
+        </li>
+        <li><strong>HSPACE: Espaciado horizontal</strong>
+            <ul>
+                <li>Sirve para indicar la distancia que separa horizontalmente la imagen del texto que lo rodea, es decir controla el espacio a la izquierda y a la derecha de la imagen. Sus valores se declaran en pixeles.</li>
+            </ul>
+        </li>
+        <li><strong>VSPACE: Espaciado vertical</strong>
+            <ul>
+                <li>Sirve para indicar la distancia que separa verticalmente la imagen del texto que lo rodea, es decir controla el espacio por arriba y por abajo de la imagen. Sus valores se declaran en pixeles.</li>
+                <li>&lt;img src="calvin.gif" align="left" border=1 hspace=50 vspace=50&gt;</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p align="center">
+        <a href="index.html">Volver al inicio</a> &nbsp;&nbsp;&nbsp;
+        <a href="#top">Ir arriba</a>
+    </p>
+
+    <hr width="80%" color="#E65100" size="3">
+
+    <p align="center">
+        <a href="mailto:villoan73@gmail.com">villoan73@gmail.com</a> &nbsp;&nbsp;&nbsp;
+        <a href="https://www.ctycev.edu.py/" target="_blank">CT y CEV "Pdte Carlos A. López"</a>
+    </p>
+
+    <hr width="80%" color="#E65100" size="3">
+
+    <p align="center"><small>Webmaster: Jhoan Ramirez & Matias Ruiz Diaz &copy; 2026</small></p>
+
+</body>
+</html>

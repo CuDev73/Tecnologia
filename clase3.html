@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3 - Unidad III: Lista de Comandos HTML</title>
+</head>
+<body background="fondo_clase3.jpg" text="#333333" link="#006699" alink="#FF9900" vlink="#660066">
+
+    <h1 align="center">Clase 3</h1>
+
+    <p align="center"><strong>Unidad III - Introducción al HTML, primeros pasos -- Formateo de textos</strong></p>
+
+    <hr width="80%" color="#006699" size="3">
+
+    <p align="center">
+        <a href="index.html">Inicio</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase1.html">Clase 1</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase2.html">Clase 2</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase4.html">Clase 4</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase5.html">Clase 5</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase6.html">Clase 6</a> &nbsp;&nbsp;&nbsp;
+        <a href="programa.html">Programa</a>
+    </p>
+
+    <hr width="80%" color="#006699" size="3">
+
+    <h2>3.11 Lista de Comandos o Etiquetas del lenguaje HTML</h2>
+
+    <p align="center">
+        <img src="imagenes/comandos.jpg" alt="Comandos HTML" width="500" height="200" border="3">
+    </p>
+
+    <h3>Comandos: (estilo físico)</h3>
+
+    <ul>
+        <li>&lt;html&gt; &lt;/html&gt; Inicio y fin de una página Web</li>
+        <li>&lt;head&gt; &lt;/head&gt; Encabezado del documento HTML</li>
+        <li>&lt;title&gt; &lt;/title&gt; Titulo de documento</li>
+        <li>&lt;body&gt; &lt;/body&gt; Cuerpo del documento</li>
+        <li>&lt;p&gt; &lt;/p&gt; Párrafo, por defecto alineado a la izquierda, su cierre es opcional.</li>
+        <li>&lt;br&gt; Salto de línea forzoso (dentro de un párrafo)</li>
+        <li>&lt;i&gt; &lt;/i&gt; Letras, palabras o párrafos en Cursivas o Itálicas</li>
+        <li>&lt;em&gt; &lt;/em&gt; Letras, palabras o párrafos enfatizados</li>
+        <li>&lt;b&gt; &lt;/b&gt; Letras o palabras en Negritas</li>
+        <li>&lt;u&gt; &lt;/u&gt; Letras o palabras subrayadas</li>
+        <li>&lt;s&gt; &lt;/s&gt; Letras o palabras tachadas</li>
+        <li>&lt;tt&gt; &lt;/tt&gt; Tipo de letra monoespaciada, máquina de escribir.</li>
+        <li>&lt;strong&gt; &lt;/strong&gt; Letras, palabras o párrafos agrandados en Negritas</li>
+        <li>&lt;small&gt; &lt;/small&gt; Texto de tamaño menor al resto de los párrafos (actual)</li>
+        <li>&lt;big&gt; &lt;/big&gt; Texto de tamaño mayor al resto de los párrafos (actual)</li>
+        <li>&lt;sup&gt; &lt;/sup&gt; Superíndice</li>
+        <li>&lt;sub&gt; &lt;/sub&gt; Subíndice</li>
+        <li>&lt;address&gt; &lt;/address&gt; Para firmas de páginas con dirección del webmaster que no sea una dirección de mail</li>
+        <li>&lt;blink&gt; &lt;/blink&gt; Texto parpadeante (solo funciona en algunos navegadores)</li>
+        <li>&lt;hn&gt; &lt;/hn&gt; Para realizar encabezados de página o sección.</li>
+    </ul>
+
+    <p><strong>Observaciones:</strong> <strong>n</strong> se reemplaza por valores de 1 a 6</p>
+
+    <ul>
+        <li>1 = Encabezado de tamaño mayor de todos</li>
+        <li>6 = Encabezado de Tamaño menor de todos</li>
+    </ul>
+
+    <p>Este comando puede colocarse tanto en el &lt;head&gt; después de &lt;/title&gt; o bien en cualquier parte del &lt;body&gt;</p>
+
+    <ul>
+        <li>&lt;hr&gt; Traza una raya horizontal de un píxel de grosor que ocupa todo el ancho de la pantalla, se usa para dividir contenidos en la página.</li>
+        <li>&lt;center&gt; &lt;/center&gt; Para centrar, se pueden colocar otros comandos dentro del mismo. (Ej. imágenes, tablas, listas, párrafos, etc.)</li>
+        <li>&amp;nbsp; Es una palabra reservada que sirve para colocar espacio entre caracteres o palabras. Cada uno representa un espacio.</li>
+    </ul>
+
+    <h3>Comandos: (estilo lógico)</h3>
+
+    <ul>
+        <li>&lt;!-- ... .... --&gt; Para colocar comentarios en la página</li>
+        <li>&lt;var&gt; &lt;/var&gt; Para definir Variables</li>
+        <li>&lt;samp&gt; &lt;/samp&gt; Texto de muestra, ejemplos</li>
+        <li>&lt;dfn&gt; &lt;/dfn&gt; Definición de un término.</li>
+        <li>&lt;cite&gt; &lt;/cite&gt; Para colocar citas breves (Como una frase célebre, por ejemplo)</li>
+        <li>&lt;blockquote&gt; . &lt;/blockquote&gt; Para colocar citas largas</li>
+    </ul>
+
+    <h3>Atributos</h3>
+
+    <p>Son palabras que acompañan siempre a un determinado comando y sirven para mejorar la apariencia del formato dado a los contenidos de la página.</p>
+
+    <p><strong>Sintaxis:</strong> &lt;comando atributo = "valor"&gt; ... ... ... ... ... ... ... ... .....&lt;/comando&gt;</p>
+
+    <h4>Atributo de &lt;p&gt;: Align</h4>
+
+    <p>Sirve para alineación del párrafo</p>
+
+    <ul>
+        <li>Align = "left" alineación izquierda (predeterminado)</li>
+        <li>Align = "right" alineación derecha</li>
+        <li>Align = "center" alineación centrada</li>
+    </ul>
+
+    <p><strong>Ej: &lt;p align = "center"&gt;Aquí se escribe el párrafo &lt;/P&gt;</strong></p>
+
+    <h4>Atributo de &lt;HR&gt;</h4>
+
+    <ul>
+        <li><strong>Noshade</strong> Sirve para hacer una línea horizontal más oscura
+            <ul>
+                <li><strong>Ej: &lt;Hr noshade&gt;</strong></li>
+            </ul>
+        </li>
+        <li><strong>Width</strong> Sirve para ancho de raya horizontal en pantalla
+            <ul>
+                <li>width = "nro" ancho en pantalla expresado en píxeles</li>
+                <li>width = "nro%" ancho en pantalla expresado en % real de pantalla</li>
+                <li><strong>Ej: &lt;Hr width = "50"&gt;</strong></li>
+                <li><strong>Ej: &lt;Hr width = "50%"&gt;</strong></li>
+            </ul>
+        </li>
+        <li><strong>Size</strong> Sirve para altura o grosor de raya horizontal en pantalla
+            <ul>
+                <li>size = "nro" altura o grosor en pantalla expresado en píxeles</li>
+                <li>size = "nro%" altura en pantalla expresado en % real de pantalla</li>
+                <li><strong>Ej: &lt;Hr size = "5"&gt;</strong></li>
+                <li><strong>Ej: &lt;Hr size = "5%"&gt;</strong></li>
+            </ul>
+        </li>
+        <li><strong>color</strong> Sirve para colorear la raya horizontal
+            <ul>
+                <li>color = "nombre de color en inglés" (Ej. blue, pink, yellow, white, red, green, etc.)</li>
+                <li>color = "código hexadecimal" ("#xxyyzz")</li>
+                <li>xx = color rojo, yy = color verde, zz = color azul</li>
+                <li>todos los colores son representados por combinaciones de dígitos del (0 ...9) y letras (A...F)</li>
+                <li><strong>Ej: &lt;Hr color = "red"&gt;</strong> (para color rojo)</li>
+                <li><strong>Ej: &lt;Hr color = "#AA0000"&gt;</strong> (para color rojo oscuro)</li>
+            </ul>
+        </li>
+        <li><strong>Align</strong> Sirve para alinear la raya, cuando no ocupe el 100% de pantalla
+            <ul>
+                <li>Align = "left" alineación izquierda</li>
+                <li>Align = "right" alineación derecha</li>
+                <li>Align = "center" alineación centrada (es la predeterminada)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p><strong>Ej: &lt;Hr width = "75%" align = "left"&gt;</strong></p>
+
+    <p align="center">
+        <a href="index.html">Volver al inicio</a> &nbsp;&nbsp;&nbsp;
+        <a href="#top">Ir arriba</a>
+    </p>
+
+    <hr width="80%" color="#006699" size="3">
+
+    <p align="center">
+        <a href="mailto:villoan73@gmail.com">villoan73@gmail.com</a> &nbsp;&nbsp;&nbsp;
+        <a href="https://www.ctycev.edu.py/" target="_blank">CT y CEV "Pdte Carlos A. López"</a>
+    </p>
+
+    <hr width="80%" color="#006699" size="3">
+
+    <p align="center"><small>Webmaster: Jhoan Ramirez & Matias Ruiz Diaz &copy; 2026</small></p>
+
+</body>
+</html>

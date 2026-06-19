@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4 - Unidad III: Caracteres especiales</title>
+</head>
+<body bgcolor="#ffe1e3" text="#a3001" link="#AA55aa" alink="#AAAAAA" vlink="#7755FF">
+
+    <h1 align="center">Clase 4</h1>
+
+    <p align="center"><strong>Unidad III - Introducción al HTML, primeros pasos -- Formateo de textos</strong></p>
+
+    <hr width="80%" color="#AAAAAA" size="3">
+
+    <p align="center">
+        <a href="index.html">Inicio</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase1.html">Clase 1</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase2.html">Clase 2</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase3.html">Clase 3</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase5.html">Clase 5</a> &nbsp;&nbsp;&nbsp;
+        <a href="clase6.html">Clase 6</a> &nbsp;&nbsp;&nbsp;
+        <a href="programa.html">Programa</a>
+    </p>
+
+    <hr width="80%" color="#AAAAAA" size="3">
+
+    <h2>3.12 Caracteres especiales</h2>
+
+    <p align="center">
+        <img src="imagenes/caracteres.jpg"Caracteres especiales HTML" width="500"  border="2">
+    </p>
+
+    <p>Como ya se aprendió en las clases anteriores, los archivos HTML son de texto ASCII y no deben contener nada de formato, los únicos caracteres que deben ir son los que se imprimen directamente del teclado. En lenguaje técnico, los caracteres de los archivos HTML deben pertenecer al conjunto estándar de caracteres ASCII (de 7 bits), y no pueden ser ninguno de los caracteres del ASCII "extendido" (de 8 bits).</p>
+
+    <p>Para solucionar estos problemas, HTML define una serie especial de códigos, llamados <em>entidades de carácter</em>, que pueden usarse para representar los caracteres que se quiera emplear.</p>
+
+    <ul>
+        <li><strong>Entidades de carácter para caracteres especiales</strong>
+            <ul>
+                <li>Las entidades e carácter pueden ser de dos formas: entidades <em>nombradas</em> y <em>numeradas</em></li>
+                <li>Las entidades <em>nombradas</em> empiezan con el signo ampersand (&amp;) y terminan en punto y coma (;). En medio se encuentra el nombre del carácter. Los nombres, distinguen entre mayúsculas y minúsculas, así que tenga cuidado de escribirlos exactamente.</li>
+                <li>Ejemplos: &amp;quot;</li>
+                <li>&amp;laquo;</li>
+                <li>&amp;copy;</li>
+                <li>Las entidades <em>numeradas</em> también empiezan con ampersand y terminan con punto y coma, pero en lugar de nombre llevan el signo de número (#) y un número. Ese número corresponde al conjunto de ISO-Latin-1. Las entidades numeradas son como sigue:</li>
+                <li>Ejemplos: &amp;#130;</li>
+                <li>&amp;#245;</li>
+                <li>En los archivos HTML, las entidades nombradas o numeradas se colocan en el lugar del carácter que representan. Así para poner la palabra <em>francés</em> en el archivo HTML, se escribirá:</li>
+                <li>franc&amp;eacute;s o bien franc&amp;#233;s</li>
+            </ul>
+        </li>
+        <li><strong>Entidades de carácter para caracteres reservados</strong>
+            <ul>
+                <li>Existen unos cuantos caracteres que tienen un significado especial en el propio HTML. Para estas excepciones también se deben usar las entidades de carácter. Por ejemplo: se quiere poner una línea de código como la siguiente:</li>
+                <li>&lt;P&gt;&lt;CODE&gt;if x &lt; 0 do print i&lt;/CODE&gt;&lt;/P&gt;</li>
+                <li>No parece nada raro, sin embargo, el problema es con el signo (&lt;) porque para HTML significa "el inicio de una etiqueta" y también con el signo (&gt;) que significa "el final de la etiqueta". La escritura correcta en HTML de la línea de código anterior, sería como sigue:</li>
+                <li>&lt;P&gt;&lt;CODE&gt;if x &amp;lt; 0 do print i&lt;/CODE&gt;&lt;/P&gt;</li>
+                <li>HTML cuenta con caracteres reservados, para cada uno de estos caracteres, según se muestra:</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p><strong>Entidad Resultado</strong></p>
+
+    <ul>
+        <li>&amp;lt; &lt;</li>
+        <li>&amp;gt; &gt;</li>
+        <li>&amp;amp; &amp;</li>
+        <li>&amp;quot; "</li>
+    </ul>
+
+    <p><strong>Lista de códigos o caracteres especiales</strong></p>
+
+    <ul>
+        <li>&amp;aacute; á &amp;Aacute; Á &amp;ntilde; ñ &amp;#191; ¿</li>
+        <li>&amp;eacute; é &amp;Eacute; É &amp;Ntilde; Ñ &amp;#161; ¡</li>
+        <li>&amp;iacute; í &amp;Iacute; Í &amp;uuml; ü</li>
+        <li>&amp;oacute; ó &amp;Oacute; Ó &amp;Uuml; Ü</li>
+        <li>&amp;uacute; ú &amp;Uacute; Ú</li>
+    </ul>
+
+    <h2>3.13 Formateo del &lt;BODY&gt; - Atributos</h2>
+
+    <p>Se ha explicado que en el "cuerpo" del documento &lt;BODY&gt;, va todo lo queramos mostrar en nuestra página web. Esta etiqueta tiene atributos, con los que se pueden personalizar según el aspecto que se desee. Esta personalización se consigue a través de los siguientes atributos:</p>
+
+    <ul>
+        <li><strong>Bgcolor: Color de fondo</strong>
+            <ul>
+                <li>Con este atributo podremos definir el color de fondo para nuestra página.</li>
+                <li>Ejemplo:</li>
+                <li>Si queremos que nuestra página tenga un fondo rojo</li>
+                <li>&lt;body bgcolor="red"&gt;&lt;/body&gt;........................color=nombre en ingles</li>
+                <li>O bien &lt;body bgcolor="#FF0000"&gt;&lt;/body&gt;.................color=hexadecimal</li>
+            </ul>
+        </li>
+        <li><strong>Text: Color de texto</strong>
+            <ul>
+                <li>Se usa para predefinir el color del texto de nuestra web.</li>
+                <li>Ejemplo:</li>
+                <li>Si queremos que nuestro texto sea en negro:</li>
+                <li>&lt;body text= "#000000"&gt;&lt;/body&gt;</li>
+            </ul>
+        </li>
+        <li><strong>Link, alink y vlink: Color de enlaces</strong>
+            <ul>
+                <li>Para definir el color con el que se mostraran los links de nuestra página, debemos diferenciar tres tipos de instrucciones: el color del enlace (con la etiqueta "link"), el color del link activo (con la etiqueta "alink") y el color del link ya visitado (con la etiqueta "vlink").</li>
+                <li>Ejemplo:</li>
+                <li>Si queremos que nuestra página tenga un color de <em>enlace</em> rojo y que cuando estén <em>activos</em> también sean rojos y que cuando estén <em>inactivos</em> se queden en azul, deberemos escribir lo siguiente:</li>
+                <li>&lt;body link= "#FF0000" alink= "#FF0000" vlink= "#0000FF"&gt;&lt;/body&gt;</li>
+            </ul>
+        </li>
+        <li><strong>Background: Imagen de fondo</strong>
+            <ul>
+                <li>Se usa para que tu página tenga una imagen de fondo.</li>
+                <li>Ejemplo:</li>
+                <li>&lt;body background="nombre de la imagen o URL"&gt; &lt;/body&gt;</li>
+                <li>Obs.: si la imagen no es suficientemente grande para rellenar toda la página, la imagen se repetirá a lo ancho y a lo largo hasta rellenar todo el espacio.</li>
+            </ul>
+        </li>
+        <li><strong>Background = "" bgproperties = "fixed": Imagen de fondo fija</strong>
+            <ul>
+                <li>Se usa cuando se especifica una imagen como fondo, se añade este atributo para indicar si la imagen es fija o desplazable.</li>
+                <li>Ejemplo:</li>
+                <li>&lt;body background = "back.gif" bgproperties = "fixed"&gt;</li>
+            </ul>
+        </li>
+        <li><strong>Topmargin, bottommargin, leftmargin, rightmargin: Márgenes</strong>
+            <ul>
+                <li>Se usa para predefinir los márgenes de nuestra página web, "leftmargin" para el margen izquierdo, "topmargin" para el margen de arriba, "rightmargin" para el margen de la derecha y "bottommargin" para el margen de abajo.</li>
+                <li>Ejemplo:</li>
+                <li>Si queremos que nuestros márgenes sean de 10 píxeles por todas partes:</li>
+                <li>&lt;body leftmargin="10px" topmargin="10px" rightmargin="10px" bottommargin="10px"&gt;&lt;/body&gt;</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>3.14 Tamaño, color y tipos de fuentes</h2>
+
+    <p>La etiqueta &lt;FONT&gt; &lt;/FONT&gt; se usa para controlar las características de una cadena de caracteres, que no está cubierta por los estilos de caracteres inicialmente definidos en el lenguaje HTML. Se usa para cambiar el tipo de letra, el tamaño, y el color.</p>
+
+    <p>Ejemplo:</p>
+
+    <p>Si queremos cambiar el tipo de letra</p>
+    <p>&lt;font face = "Times New Roman"&gt; fuente de la fuente &lt;/font&gt;</p>
+
+    <p>Si queremos cambiar el tamaño</p>
+    <p>&lt;font size="5"&gt;Este es el tamaño de fuente 5&lt;/font&gt;</p>
+
+    <p>Si queremos cambiar el color</p>
+    <p>&lt;font color = "#FF0000"&gt; texto rojo &lt;/font&gt;</p>
+
+    <p align="center">
+        <a href="index.html">Volver al inicio</a> &nbsp;&nbsp;&nbsp;
+        <a href="#top">Ir arriba</a>
+    </p>
+
+    <hr width="80%" color="#AAAAAA" size="3">
+
+    <p align="center">
+        <a href="mailto:villoan73@gmail.com">villoan73@gmail.com</a> &nbsp;&nbsp;&nbsp;
+        <a href="https://www.ctycev.edu.py/" target="_blank">CT y CEV "Pdte Carlos A. López"</a>
+    </p>
+
+    <hr width="80%" color="#AAAAAA" size="3">
+
+    <p align="center"><small>Webmaster: Jhoan Ramirez & Matias Ruiz Diaz &copy; 2026</small></p>
+
+</body>
+</html>
